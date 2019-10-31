@@ -1,0 +1,31 @@
+import Head from "next/head";
+
+export default () => (
+  <div>
+    <Head>
+      <meta charset="UTF-8" />
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+        key="viewport"
+      />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <title>Learn Next.js</title>
+      <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap"
+        rel="stylesheet"
+      ></link>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+      />
+    </Head>
+    <style jsx global>{`
+            body {
+                background:#00000002;
+                background-position: 0 0, 25px 25px;
+                background-size: 50px 50px;
+                margin:0;
+        `}</style>
+  </div>
+);
