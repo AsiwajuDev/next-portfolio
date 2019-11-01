@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import Layout from "../layouts";
 import fetch from "isomorphic-unfetch";
 import Profile from "../components/Profile";
 import Projects from "../components/Projects";
 import { css } from "@emotion/core";
 import { GridLoader } from "react-spinners";
+import Meta from "../components/Meta";
 
 const Home = ({ data }) => {
   const [isLoading, setIsLoading] = useState(true);
@@ -22,12 +22,13 @@ const Home = ({ data }) => {
 
   return (
     <>
+      <Meta />
       {isLoading ? (
         <div style={{ height: "640px" }}>
           <GridLoader css={override} size={38} />
         </div>
       ) : (
-        <Layout>
+        <>
           <div className="container" style={{ overflow: "hidden" }}>
             <Profile />
             <Projects data={data} />
@@ -46,7 +47,7 @@ const Home = ({ data }) => {
             }
         `}
           </style>
-        </Layout>
+        </>
       )}
     </>
   );

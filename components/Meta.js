@@ -10,7 +10,8 @@ export default () => (
         key="viewport"
       />
       <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-      <title>Learn Next.js</title>
+      <link rel="shortcut icon" href="/favicon.ico"></link>
+      <title>Rocktim Saikia | Software Engineer</title>
       <link
         href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap"
         rel="stylesheet"
