@@ -15,12 +15,12 @@ export default ({ data }) => (
             </div>
             <div className="buttons" style={{ marginBottom: "60px" }}>
               <span>
-                <a href="#" className="btn">
+                <a href={i.url} target="_blank" className="btn">
                   Repo
                 </a>
               </span>
               <span>
-                <a href="#" className="btn">
+                <a href={i.homepage} target="_blank" className="btn">
                   Demo
                 </a>
               </span>
