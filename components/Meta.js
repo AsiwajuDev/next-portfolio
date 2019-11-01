@@ -13,7 +13,7 @@ export default () => (
       <link rel="shortcut icon" href="/favicon.ico"></link>
       <title>Rocktim Saikia | Software Engineer</title>
       <link
-        href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap"
+        href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Noto+Sans:400,600,700&display=swap"
         rel="stylesheet"
       ></link>
       <link
@@ -27,6 +27,7 @@ export default () => (
         background-position: 0 0, 25px 25px;
         background-size: 50px 50px;
         margin: 0;
+        font-family: "Noto Sans";
       }
     `}</style>
   </div>
