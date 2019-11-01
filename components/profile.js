@@ -7,7 +7,7 @@ export default () => (
       <div className="info">
         <h3>Rocktim Saikia</h3>
         <p className="location">
-          <i className="fas fa-map-marker-alt"></i> Texas ,Us
+          <i className="fas fa-map-marker-alt"></i> Assam ,India
         </p>
         <p className="email">
           <i className="fas fa-envelope"></i> rocktim61@gmail.com
@@ -31,22 +31,22 @@ export default () => (
       </div>
       <ul className="social">
         <li>
-          <a href="">
+          <a href="https://github.com/RocktimSaikia" target="blank">
             <i className="fab fa-github"></i>
           </a>
         </li>
         <li>
-          <a href="">
+          <a href="https://twitter.com/RocktimSaikia10" target="blank">
             <i className="fab fa-twitter"></i>
           </a>
         </li>
         <li>
-          <a href="">
+          <a href="https://www.linkedin.com/in/rocktim-saikia/" target="blank">
             <i className="fab fa-linkedin"></i>
           </a>
         </li>
         <li>
-          <a href="">
+          <a href="https://www.instagram.com/itz_rocktim" target="blank">
             <i className="fab fa-instagram"></i>
           </a>
         </li>
