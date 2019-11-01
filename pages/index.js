@@ -5,6 +5,7 @@ import Projects from "../components/Projects";
 import { css } from "@emotion/core";
 import { GridLoader } from "react-spinners";
 import Meta from "../components/Meta";
+import Config from "../config";
 
 const Home = ({ data }) => {
   const [isLoading, setIsLoading] = useState(true);
@@ -30,7 +31,7 @@ const Home = ({ data }) => {
       ) : (
         <>
           <div className="container" style={{ overflow: "hidden" }}>
-            <Profile />
+            <Profile Config={Config} />
             <Projects data={data} />
           </div>
           <style jsx>
@@ -55,7 +56,7 @@ const Home = ({ data }) => {
 
 Home.getInitialProps = async () => {
   const res = await fetch(
-    "https://api.github.com/users/rocktimsaikia/repos?sort=created"
+    `https://api.github.com/users/${Config.GITHUB_USER_NAME}/repos?sort=created`
   );
   const data = await res.json();
   const filtered = data.filter(i => !i.fork && i.description != null);
