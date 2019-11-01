@@ -1,30 +1,56 @@
+import React, { useEffect, useState } from "react";
 import Layout from "../layouts";
 import fetch from "isomorphic-unfetch";
 import Profile from "../components/Profile";
 import Projects from "../components/Projects";
+import { css } from "@emotion/core";
+import GridLoader from "react-spinners/GridLoader";
 
-const Home = ({ data }) => (
-  <Layout>
-    <div className="container" style={{ overflow: "hidden" }}>
-      <Profile />
-      <Projects data={data} />
-    </div>
-    <style jsx>
-      {`
-        .container {
-          display: flex;
-          flex-direction: row;
-          padding: 20px;
-          overflow-x: hidden;
-        }
-        @media (max-width: 800px) {
+const Home = ({ data }) => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+  }, []);
+
+  const override = css`
+    margin: auto;
+    margin-top: 20%;
+  `;
+
+  return (
+    <>
+      {isLoading ? (
+        <div style={{ height: "640px" }}>
+          <GridLoader css={override} size={38} />
+        </div>
+      ) : (
+        <Layout>
+          <div className="container" style={{ overflow: "hidden" }}>
+            <Profile />
+            <Projects data={data} />
+          </div>
+          <style jsx>
+            {`
           .container {
-            flex-direction: column;
+            display: flex;
+            flex-direction: row;
+            padding: 20px;
+            overflow-x: hidden;
           }
-      `}
-    </style>
-  </Layout>
-);
+          @media (max-width: 800px) {
+            .container {
+              flex-direction: column;
+            }
+        `}
+          </style>
+        </Layout>
+      )}
+    </>
+  );
+};
 
 Home.getInitialProps = async () => {
   const res = await fetch(
