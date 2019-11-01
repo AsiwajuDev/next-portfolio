@@ -4,7 +4,7 @@ import fetch from "isomorphic-unfetch";
 import Profile from "../components/Profile";
 import Projects from "../components/Projects";
 import { css } from "@emotion/core";
-import GridLoader from "react-spinners/GridLoader";
+import { GridLoader } from "react-spinners";
 
 const Home = ({ data }) => {
   const [isLoading, setIsLoading] = useState(true);
