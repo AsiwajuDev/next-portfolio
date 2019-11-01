@@ -2,7 +2,7 @@ export default () => (
   <>
     <div className="profile">
       <img src="https://avatars1.githubusercontent.com/rocktimsaikia" />
-      <div style={{ textAlign: "left", padding: "10px" }}>
+      <div className="info">
         <h3>Rocktim Saikia</h3>
         <p className="location">
           <i className="fas fa-map-marker-alt"></i> Texas ,Us
@@ -107,6 +107,32 @@ export default () => (
       }
       .social > li > a {
         color: #fff;
+      }
+      .info {
+        text-align: left;
+        padding: 10px;
+      }
+      @media (max-width: 800px) {
+        .profile {
+          position: relative;
+          z-index: 0;
+          width: 100%;
+          height: 100%;
+          padding: 0;
+        }
+        img {
+          height: 120px;
+          float: left;
+          padding: 10px;
+        }
+        .info {
+          text-align: left;
+          padding: 0;
+          margin: 0;
+        }
+        .info > h3 {
+          margin-top: 6px;
+        }
       }
     `}</style>
   </>

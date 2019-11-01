@@ -21,11 +21,12 @@ export default () => (
       />
     </Head>
     <style jsx global>{`
-            body {
-                background:#00000002;
-                background-position: 0 0, 25px 25px;
-                background-size: 50px 50px;
-                margin:0;
-        `}</style>
+      body {
+        background: #00000002;
+        background-position: 0 0, 25px 25px;
+        background-size: 50px 50px;
+        margin: 0;
+      }
+    `}</style>
   </div>
 );
