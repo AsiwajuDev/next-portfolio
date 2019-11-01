@@ -4,16 +4,16 @@ import RepoIcon from "../public/icons/repo";
 export default ({ data }) => (
   <div className="projects">
     <ul className="project-cards">
-      {data.slice(0, 9).map((i, index) => (
+      {data.map((i, index) => (
         <Fade bottom duration={1500} delay={100 * index} key={i.id}>
           <li className="project-card">
             <div className="about">
               <p>
-                <RepoIcon /> <span className="project-title">{i.name}</span>
+                <RepoIcon /> <span className="project-title">{i.name} 🚀</span>
               </p>
               <p style={{ marginBottom: "130px" }}>{i.description}</p>
             </div>
-            <div className="buttons" style={{ marginBottom: "60px" }}>
+            <div className="buttons" style={{ marginBottom: "20px" }}>
               <span>
                 <a href={i.url} target="_blank" className="btn">
                   Repo
@@ -25,7 +25,7 @@ export default ({ data }) => (
                 </a>
               </span>
             </div>
-            <p>
+            {/* <p>
               <span>
                 <i className="dot"></i> React
               </span>
@@ -35,7 +35,7 @@ export default ({ data }) => (
               <span>
                 <i className="dot"></i> Express
               </span>
-            </p>
+            </p> */}
           </li>
         </Fade>
       ))}
@@ -56,6 +56,7 @@ export default ({ data }) => (
       .project-card {
         position: relative;
         z-index: 0;
+        height: 200px;
         border-radius: 10px;
         font-size: 1rem;
         padding: 10px 20px;
