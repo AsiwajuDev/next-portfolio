@@ -2,45 +2,48 @@ import Layout from "../layouts";
 import fetch from "isomorphic-unfetch";
 import Profile from "../components/profile";
 import RepoIcon from "../public/icons/repo";
+import Fade from "react-reveal/Fade";
 
 const Home = ({ data }) => (
   <Layout>
-    <div className="container">
+    <div className="container" style={{ overflow: "hidden" }}>
       <Profile />
       <div className="projects">
         <ul className="project-cards">
-          {data.slice(0, 9).map(i => (
-            <li className="project-card" key={i.id}>
-              <div className="about">
+          {data.slice(0, 9).map((i, index) => (
+            <Fade bottom duration={1500} delay={100 * index} key={i.id}>
+              <li className="project-card">
+                <div className="about">
+                  <p>
+                    <RepoIcon /> <span className="project-title">{i.name}</span>
+                  </p>
+                  <p style={{ marginBottom: "130px" }}>{i.description}</p>
+                </div>
+                <div className="buttons" style={{ marginBottom: "60px" }}>
+                  <span>
+                    <a href="#" className="btn">
+                      Repo
+                    </a>
+                  </span>
+                  <span>
+                    <a href="#" className="btn">
+                      Demo
+                    </a>
+                  </span>
+                </div>
                 <p>
-                  <RepoIcon /> <span className="project-title">{i.name}</span>
+                  <span>
+                    <i className="dot"></i> React
+                  </span>
+                  <span>
+                    <i className="dot"></i> Node
+                  </span>
+                  <span>
+                    <i className="dot"></i> Express
+                  </span>
                 </p>
-                <p style={{ marginBottom: "130px" }}>{i.description}</p>
-              </div>
-              <div className="buttons" style={{ marginBottom: "60px" }}>
-                <span>
-                  <a href="#" className="btn">
-                    Repo
-                  </a>
-                </span>
-                <span>
-                  <a href="#" className="btn">
-                    Demo
-                  </a>
-                </span>
-              </div>
-              <p>
-                <span>
-                  <i className="dot"></i> React
-                </span>
-                <span>
-                  <i className="dot"></i> Node
-                </span>
-                <span>
-                  <i className="dot"></i> Express
-                </span>
-              </p>
-            </li>
+              </li>
+            </Fade>
           ))}
         </ul>
       </div>
@@ -80,7 +83,7 @@ const Home = ({ data }) => (
           transition: all 0.6s;
         }
         .project-card:hover {
-          transform: scale(1.09);
+          transform: scale(1.09) !important;
           box-shadow: rgba(0, 0, 0, 0.12) 0px 30px 60px;
           z-index: 1;
         }

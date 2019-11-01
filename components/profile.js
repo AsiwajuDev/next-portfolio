@@ -1,5 +1,7 @@
+import Fade from "react-reveal/Fade";
+
 export default () => (
-  <>
+  <Fade duration={2000}>
     <div className="profile">
       <img src="https://avatars1.githubusercontent.com/rocktimsaikia" />
       <div className="info">
@@ -133,7 +135,10 @@ export default () => (
         .info > h3 {
           margin-top: 6px;
         }
+        .social {
+          padding-bottom: 20px;
+        }
       }
     `}</style>
-  </>
+  </Fade>
 );
