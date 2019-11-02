@@ -67,7 +67,7 @@ export default ({
           position: fixed;
           z-index: 1;
           padding: 10px;
-          font-size: 1rem;
+          font-size: 0.9rem;
           text-align: center;
           box-shadow: rgba(0, 0, 0, 0.12) 0px 30px 60px;
           background: #fff;

@@ -58,7 +58,7 @@ export default ({ data }) => (
         z-index: 0;
         height: 200px;
         border-radius: 10px;
-        font-size: 1rem;
+        font-size: 0.8rem;
         padding: 10px 20px;
         box-shadow: 0 0px 15px -3px rgba(0, 0, 0, 0.1),
           0 0px 6px -2px rgba(0, 0, 0, 0.05);
@@ -116,6 +116,9 @@ export default ({ data }) => (
         background-color: #0070f399;
         border-radius: 50%;
         display: inline-block;
+      }
+      .about > p {
+        font-size: 1rem;
       }
 
       @media (max-width: 1265px) {
