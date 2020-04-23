@@ -1,7 +1,7 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
 
-const checkUrls = obj => {
+const checkUrls = (obj) => {
   switch (obj.name) {
     case "github":
       return `https://github.com/${obj.userName}`;
@@ -24,8 +24,8 @@ export default ({
     EMAIL,
     TECH_STACK,
     SOCIAL_MEDIA,
-    LOCATION
-  }
+    LOCATION,
+  },
 }) => {
   return (
     <Fade duration={2000}>
@@ -45,7 +45,7 @@ export default ({
           <p>{ROLE}</p>
 
           <div className="tech-stack">
-            {TECH_STACK.map(i => (
+            {TECH_STACK.map((i) => (
               <p>
                 <span className="dot"></span> {i}
               </p>
@@ -53,7 +53,7 @@ export default ({
           </div>
         </div>
         <ul className="social">
-          {SOCIAL_MEDIA.map(i => (
+          {SOCIAL_MEDIA.map((i) => (
             <li>
               <a href={checkUrls(i)} target="blank">
                 <i className={`fab fa-${i.name}`}></i>
@@ -71,7 +71,7 @@ export default ({
           text-align: center;
           box-shadow: rgba(0, 0, 0, 0.12) 0px 30px 60px;
           background: #fff;
-          width: 190px;
+          width: 250px;
           height: 600px;
           border-radius: 10px;
         }

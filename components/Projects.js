@@ -37,7 +37,7 @@ export default ({ data }) => {
       </ul>
       <style jsx>{`
         .projects {
-          margin-left: 190px;
+          margin-left: 250px;
         }
         .project-cards {
           display: grid;
@@ -56,7 +56,7 @@ export default ({ data }) => {
           padding: 10px 20px;
           box-shadow: 0 0px 15px -3px rgba(0, 0, 0, 0.1),
             0 0px 6px -2px rgba(0, 0, 0, 0.05);
-          width: 22vw;
+          width: 21vw;
           word-wrap: break-word;
           background: #fff;
           cursor: context-menu;

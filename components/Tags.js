@@ -4,13 +4,13 @@ import getTools from "dependency-fetcher";
 export default ({ name }) => {
   const [state, setState] = useState([]);
 
-  const filterDependencies = arr => {
+  const filterDependencies = (arr) => {
     let newArr = [...arr];
-    arr.map(i => {
+    arr.map((i) => {
       if (i.package === "react") {
         newArr.unshift({
           package: i.package,
-          version: "0.0.0"
+          version: "0.0.0",
         });
       }
     });
@@ -21,7 +21,7 @@ export default ({ name }) => {
     const fetchData = async () => {
       let isCancelled = false;
 
-      const data = await getTools("RocktimSaikia", String(name));
+      const data = await getTools("asiwajudev", String(name));
       if (!isCancelled) {
         setState(data.dependencies);
       }
@@ -34,7 +34,7 @@ export default ({ name }) => {
 
   return (
     <div>
-      {filterDependencies(state).map(i => (
+      {filterDependencies(state).map((i) => (
         <p key={i.package} className="package">
           <span className="dot"></span> {i.package}
         </p>

@@ -1,29 +1,29 @@
 module.exports = {
-  GITHUB_USER_NAME: "rocktimsaikia",
-  NAME: "Rocktim Saikia",
-  ROLE: "Fullstack Web Developer",
-  EMAIL: "rocktim61@gmail.com",
+  GITHUB_USER_NAME: "asiwajudev",
+  NAME: "Kazeem Asiwaju-Bello",
+  ROLE: "FrontEnd and SharePoint Developer",
+  EMAIL: "olanrewajuranda@gmail.com",
   LOCATION: {
-    state: "Assam",
-    country: "India"
+    state: "Lagos",
+    country: "Nigeria",
   },
   TECH_STACK: ["Javascript", "React.js", "Node.js", "Next.js"],
   SOCIAL_MEDIA: [
     {
       name: "github",
-      userName: "RocktimSaikia"
+      userName: "RocktimSaikia",
     },
     {
       name: "twitter",
-      userName: "RocktimSaikia10"
+      userName: "RocktimSaikia10",
     },
     {
       name: "linkedin",
-      userName: "rocktim-saikia"
+      userName: "rocktim-saikia",
     },
     {
       name: "instagram",
-      userName: "itz_rocktim"
-    }
-  ]
+      userName: "itz_rocktim",
+    },
+  ],
 };
