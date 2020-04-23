@@ -27,33 +27,39 @@
 
 ```sh
 {
-  GITHUB_USER_NAME: "rocktimsaikia",
-  NAME: "Rocktim Saikia",
-  ROLE: "Fullstack Web Developer",
-  EMAIL: "rocktim61@gmail.com",
+  GITHUB_USER_NAME: "asiwajudev",
+  NAME: "Kazeem Asiwaju-Bello",
+  ROLE: "Frontend Developer",
+  EMAIL: "olanrewajuranda@gmail.com",
   LOCATION: {
-    state: "Assam",
-    country: "India"
+    state: "Lagos",
+    country: "Nigeria"
   },
-  TECH_STACK: ["Javascript", "React.js", "Node.js", "Next.js"],
+  TECH_STACK: [
+    "Javascript",
+    "React.js",
+    "Next.js",
+    "ReactNavtive",
+    ".NET & SharePoint",
+  ],
   SOCIAL_MEDIA: [
     {
       name: "github",
-      userName: "RocktimSaikia"
+      userName: "asiwajudev",
     },
     {
       name: "twitter",
-      userName: "RocktimSaikia10"
+      userName: "_asiwaju07",
     },
     {
       name: "linkedin",
-      userName: "rocktim-saikia"
+      userName: "asiwajudev",
     },
     {
-      name: "instagram",
-      userName: "itz_rocktim"
-    }
-  ]
+      name: "medium",
+      userName: "@asiwaju",
+    },
+  ],
 };
 ```
 

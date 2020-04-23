@@ -21,7 +21,7 @@ export default ({ data }) => {
               </div> */}
               <div className="buttons" style={{ marginBottom: "20px" }}>
                 <span>
-                  <a href={i.url} target="_blank" className="btn">
+                  <a href={i.html_url} target="_blank" className="btn">
                     Repo
                   </a>
                 </span>
