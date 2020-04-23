@@ -59,7 +59,7 @@ Home.getInitialProps = async () => {
     `https://api.github.com/users/${Config.GITHUB_USER_NAME}/repos?sort=created`
   );
   const data = await res.json();
-  const filtered = data.filter(i => !i.fork && i.description != null);
+  const filtered = data.filter((i) => !i.fork && i.description != null);
   return { data: filtered };
 };
 
