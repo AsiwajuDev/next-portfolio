@@ -75,11 +75,13 @@ export default ({
           box-shadow: rgba(0, 0, 0, 0.12) 0px 30px 60px;
           background: #fff;
           width: 250px;
-          height: 600px;
+          height: 610px;
           border-radius: 10px;
         }
         .tech-stack {
           text-align: left;
+          display: flex;
+          flex-wrap: wrap;
         }
 
         .location > i {
@@ -89,8 +91,8 @@ export default ({
           color: #000;
         }
         .tech-stack > p {
-          margin: 10px;
-          padding: 5px 12px;
+          margin: 10px 5px;
+          padding: 5px 10px;
           border-radius: 20px;
           box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
             0 4px 6px -2px rgba(0, 0, 0, 0.05);
@@ -102,7 +104,7 @@ export default ({
           background-color: #342ead;
           border-radius: 50%;
           display: inline-block;
-          margin-right: 20px;
+          margin-right: 10px;
         }
         img {
           height: 180px;

@@ -11,8 +11,9 @@ module.exports = {
     "Javascript",
     "React.js",
     "Next.js",
+    "C# & .NET",
     "ReactNavtive",
-    ".NET & SharePoint",
+    "SharePoint",
   ],
   SOCIAL_MEDIA: [
     {
