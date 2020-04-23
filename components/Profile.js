@@ -99,7 +99,7 @@ export default ({
         .dot {
           height: 10px;
           width: 10px;
-          background-color: #0070f399;
+          background-color: #b063c5;
           border-radius: 50%;
           display: inline-block;
           margin-right: 20px;
@@ -115,7 +115,7 @@ export default ({
         .social > li {
           display: inline-block;
           margin-right: 10px;
-          background: #6200edb8;
+          background: #40bad5;
           padding: 8px 10px;
           border-radius: 50%;
           box-shadow: 0 4px 14px 0 rgba(0, 118, 255, 0.39);

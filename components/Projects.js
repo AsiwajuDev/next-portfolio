@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Fade from "react-reveal/Fade";
 import RepoIcon from "../public/icons/repo";
-// import Tags from "./Tags";
 
 export default ({ data }) => {
   return (
@@ -10,15 +9,13 @@ export default ({ data }) => {
         {data.slice([]).map((i, index) => (
           <Fade bottom duration={1500} delay={100 * index} key={i.id}>
             <li className="project-card">
-              <div className="about" style={{ marginBottom: "100px" }}>
+              <div className="about" style={{ marginBottom: "90px" }}>
                 <p>
                   <RepoIcon /> <span className="project-title">{i.name}</span>
                 </p>
                 <p>{i.description}</p>
               </div>
-              {/* <div style={{ marginBottom: "70px" }}>
-                <Tags name={i.name}></Tags>
-              </div> */}
+
               <div className="buttons" style={{ marginBottom: "20px" }}>
                 <span>
                   <a href={i.html_url} target="_blank" className="btn">
@@ -91,7 +88,7 @@ export default ({ data }) => {
         .buttons > span > .btn {
           text-decoration: none;
           color: #fff;
-          background: #6200edb8;
+          background: #40bad5;
           border-radius: 20px;
           box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
             0 4px 6px -2px rgba(0, 0, 0, 0.05);
