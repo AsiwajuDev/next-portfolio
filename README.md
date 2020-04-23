@@ -5,7 +5,7 @@
   A minimal one page portfolio template built with <a href="https://www.nextjs.org/" target="_blank">Nextjs</a> and hosted on <a href="https://vercel.com/" target="_blank">Vercel</a>
 </p>
 
-![demo]()
+![demo](https://github.com/AsiwajuDev/next-portfolio/blob/master/portfolio.PNG)
 
 <h3 align="center"><a href="https://asiwaju.show/sh">Demo</a> :bookmark: :tada:</h3>
 
