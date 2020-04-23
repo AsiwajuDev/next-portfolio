@@ -2,12 +2,12 @@
  A Minimal Portolfio Template :rocket:
 </h1>
 <p align="center">
-  A minimal one page portfolio template built with <a href="https://www.nextjs.org/" target="_blank">Nextjs</a> and hosted on <a href="https://zeit.co/" target="_blank">Zeit</a>
+  A minimal one page portfolio template built with <a href="https://www.nextjs.org/" target="_blank">Nextjs</a> and hosted on <a href="https://vercel.com/" target="_blank">Vercel</a>
 </p>
 
-![demo](https://user-images.githubusercontent.com/33410545/68020727-9fd15e00-fc5c-11e9-9722-ca0d444b3d69.jpg)
+![demo]()
 
-<h3 align="center"><a href="https://rocktim.show/sh">Demo</a> :bookmark: :tada:</h3>
+<h3 align="center"><a href="https://asiwaju.show/sh">Demo</a> :bookmark: :tada:</h3>
 
 ## :hammer: :tada: Installation & Set Up
 
