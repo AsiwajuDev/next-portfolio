@@ -99,7 +99,7 @@ export default ({
         .dot {
           height: 10px;
           width: 10px;
-          background-color: #b063c5;
+          background-color: #342ead;
           border-radius: 50%;
           display: inline-block;
           margin-right: 20px;
