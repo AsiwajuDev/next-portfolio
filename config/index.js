@@ -1,7 +1,7 @@
 module.exports = {
   GITHUB_USER_NAME: "asiwajudev",
   NAME: "Kazeem Asiwaju-Bello",
-  ROLE: "FrontEnd and SharePoint Developer",
+  ROLE: "FrontEnd Developer (React)",
   EMAIL: "olanrewajuranda@gmail.com",
   LOCATION: {
     state: "Lagos",
@@ -10,9 +10,9 @@ module.exports = {
   TECH_STACK: [
     "Javascript",
     "React.js",
+    "Next.js",
     "ReactNavtive",
-    "C# & .NET",
-    "SharePoint",
+    ".NET & SharePoint",
   ],
   SOCIAL_MEDIA: [
     {

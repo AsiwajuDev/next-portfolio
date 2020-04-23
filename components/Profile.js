@@ -42,7 +42,10 @@ export default ({
           <p className="email">
             <i className="fas fa-envelope"></i> {EMAIL}
           </p>
-          <p>{ROLE}</p>
+          <p>
+            <i className="fas fa-briefcase"></i>
+            {ROLE}
+          </p>
 
           <div className="tech-stack">
             {TECH_STACK.map((i) => (
