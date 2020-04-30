@@ -9,8 +9,8 @@ const checkUrls = (obj) => {
       return `https://twitter.com/${obj.userName}`;
     case "linkedin":
       return `https://www.linkedin.com/in/${obj.userName}`;
-    case "instagram":
-      return `https://www.instagram.com/${obj.userName}`;
+    case "medium":
+      return `https://www.medium.com/${obj.userName}`;
     default:
       return null;
   }
