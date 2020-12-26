@@ -4,6 +4,7 @@ import RepoIcon from "../public/icons/repo";
 
 export default ({ data }) => {
   return (
+    // test
     <div className="projects">
       <ul className="project-cards">
         {data.slice([]).map((i, index) => (
