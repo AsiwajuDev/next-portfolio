@@ -36,14 +36,17 @@ export default ({
         <div className="info">
           <h3>{NAME}</h3>
           <p className="location">
-            <i className="fas fa-map-marker-alt"></i>
+            <i
+              className="fas fa-map-marker-alt"
+              style={{ padding: "0 10px 0 5px" }}
+            ></i>
             {`${LOCATION.state}, ${LOCATION.country}`}
           </p>
           <p className="email">
-            <i className="fas fa-envelope"></i> {EMAIL}
+            <i className="fas fa-envelope space"></i> {EMAIL}
           </p>
           <p>
-            <i className="fas fa-briefcase"></i>
+            <i className="fas fa-briefcase space"></i>
             {ROLE}
           </p>
 
@@ -54,7 +57,18 @@ export default ({
               </p>
             ))}
           </div>
+
+          <a href="https://dev.to/asiwaju" className="">
+            <img
+              src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg"
+              alt="Kazeem Asiwaju-Bello's DEV Profile"
+              height="30"
+              width="30"
+              className="dev-badge"
+            />
+          </a>
         </div>
+
         <ul className="social">
           {SOCIAL_MEDIA.map((i) => (
             <li>
@@ -69,19 +83,28 @@ export default ({
         .profile {
           position: fixed;
           z-index: 1;
-          padding: 10px;
+          padding: 7px;
           font-size: 0.9rem;
           text-align: center;
           box-shadow: rgba(0, 0, 0, 0.12) 0px 30px 60px;
           background: #fff;
           width: 250px;
-          height: 610px;
+          height: auto;
           border-radius: 10px;
         }
         .tech-stack {
           text-align: left;
           display: flex;
           flex-wrap: wrap;
+        }
+
+        .dev-badge {
+          height: 30px;
+          padding: 10px 0 0 0;
+        }
+
+        .space {
+          padding: 0 5px;
         }
 
         .location > i {
@@ -113,6 +136,7 @@ export default ({
         .social {
           list-style: none;
           padding: 0;
+          margin-top: 0;
         }
         .social > li {
           display: inline-block;

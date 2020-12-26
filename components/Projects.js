@@ -41,7 +41,7 @@ export default ({ data }) => {
           display: grid;
           grid-template-columns: repeat(3, 1fr);
           grid-row-gap: 20px;
-          grid-column-gap: 20px;
+          grid-column-gap: 15px;
           list-style: none;
           position: relative;
           margin-top: 2px;

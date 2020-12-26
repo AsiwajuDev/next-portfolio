@@ -34,6 +34,7 @@ const Home = ({ data }) => {
             <Profile Config={Config} />
             <Projects data={data} />
           </div>
+
           <style jsx>
             {`
           .container {
@@ -54,13 +55,18 @@ const Home = ({ data }) => {
   );
 };
 
-Home.getInitialProps = async () => {
+// Home.getInitialProps = async () => {
+export async function getServerSideProps() {
   const res = await fetch(
     `https://api.github.com/users/${Config.GITHUB_USER_NAME}/repos?sort=created`
   );
   const data = await res.json();
   const filtered = data.filter((i) => !i.fork && i.description != null);
-  return { data: filtered };
-};
+  return {
+    props: {
+      data: filtered,
+    },
+  };
+}
 
 export default Home;
